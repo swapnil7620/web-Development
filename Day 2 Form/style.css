@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #a1bae1;
+}
+
+.form-container{
+    width: 350px;
+    margin: 100px auto;
+    padding: 25px;
+    background-color: #ade5df;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.radio-group{
+    margin-top: 8px;
+}
+
+.checkbox{
+    margin-top: 10px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #6698ef;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d25d39;
+}
