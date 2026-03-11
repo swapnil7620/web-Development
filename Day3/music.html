@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MusicStore - Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#000;
+}
+
+nav h1{
+    color:#1db954;
+    font-size:28px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#1db954;
+}
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    background:#1db954;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:30px;
+}
+
+.hero button:hover{
+    background:#17a74a;
+}
+
+/* Featured Section */
+
+.featured{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.featured h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.album-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.album{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.album img{
+    width:100%;
+    border-radius:10px;
+}
+
+.album h3{
+    margin-top:10px;
+}
+
+.album:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    padding:20px;
+    text-align:center;
+    margin-top:40px;
+}
+
+footer p{
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Dance Music Forever</h1>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Albums</a></li>
+<li><a href="#">Artists</a></li>
+<li><a href="#">Genres</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+
+<h2>Your Music. Your Store.</h2>
+<p>Discover the latest albums, artists and trending music.</p>
+<button>Shop Now</button>
+
+</section>
+
+
+<section class="featured">
+
+<h2>Featured Albums</h2>
+
+<div class="album-container">
+
+<div class="album">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbu1Uypmhw3yx9dK8vcmLtM-oMYKpE_9Ccfg&s">
+<h3>Album One</h3>
+<p>$9.99</p>
+</div>
+
+<div class="album">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTotaqQ37kafTaeMp9VK4jity-V47PrZD5thw&s">
+<h3>Album Two</h3>
+<p>$11.99</p>
+</div>
+
+<div class="album">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0owYdFXX81uhjFRv9-IutEVEGZNrJbTRhw&s">
+<h3>Album Three</h3>
+<p>$8.99</p>
+</div>
+
+<div class="album">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3evvQOPXRE2m3wWbXz35P6aQwyym4bNf6w&s">
+<h3>Album Four</h3>
+<p>$10.99</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 MusicStore | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
